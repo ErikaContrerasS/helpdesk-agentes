@@ -1,0 +1,5 @@
+[
+  { "nombre": "VPN Corporativa", "estado": "degradado", "respuesta": "Latencia elevada (1200ms), posible saturación del servidor VPN" },
+  { "nombre": "Sistema de Autenticación", "estado": "caído", "respuesta": "El servidor de autenticación no responde" },
+  { "nombre": "Rendimiento de Equipos", "estado": "operativo", "respuesta": "Sin incidentes reportados" }
+]

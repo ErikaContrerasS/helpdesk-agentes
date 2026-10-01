@@ -1,0 +1,83 @@
+[
+  {
+    "idTicket": "TCK-20261001-001",
+    "fechaHora": "2026-10-01T12:15:00.000-05:00",
+    "agente": "triage",
+    "estadoAnterior": "En clasificación",
+    "estadoNuevo": "Asignado",
+    "escaladoA": null,
+    "motivoCancelado": null,
+    "resumen": "Se clasifica el ticket como Acceso e identidad, severidad media, para Erika (erika@empresa.com). El servicio impactado es la autenticación y recuperación de contraseña; no aplica aprovisionamiento ni escalamiento."
+  },
+  {
+    "idTicket": "TCK-20261001-001",
+    "fechaHora": "2026-10-01T12:30:00.000-05:00",
+    "agente": "triage",
+    "estadoAnterior": "Asignado",
+    "estadoNuevo": "Asignado",
+    "escaladoA": null,
+    "motivoCancelado": null,
+    "resumen": "Se reclasifica el caso como Infraestructura y Software Local: la VPN está caída para múltiples usuarios de la oficina desde hace más de una hora, con Erika como usuaria reportante. Severidad alta, servicio impactado VPN y criticidad de negocio alta. Se envía al agente de diagnóstico técnico."
+  },
+  {
+    "idTicket": "TCK-20261001-001",
+    "fechaHora": "2026-10-01T12:35:00.000-05:00",
+    "agente": "diagnostico-tecnico",
+    "estadoAnterior": "Asignado",
+    "estadoNuevo": "Escalado",
+    "escaladoA": "Infraestructura / NOC",
+    "motivoCancelado": null,
+    "resumen": "Diagnóstico ejecutado para VPN Corporativa: estado degradado con latencia elevada (1200 ms) y posible saturación del servidor VPN. El servicio afecta a varios usuarios y requiere intervención de infraestructura; no se intenta remediación sin confirmación adicional."
+  },
+  {
+    "idTicket": "TCK-20261001-002",
+    "fechaHora": "2026-10-01T12:40:00.000-05:00",
+    "agente": "triage",
+    "estadoAnterior": "En clasificación",
+    "estadoNuevo": "Asignado",
+    "escaladoA": null,
+    "motivoCancelado": null,
+    "resumen": "Se clasifica como Aprovisionamiento, severidad media, para Erika (erika@empresa.com). Servicio impactado: acceso al repositorio del proyecto; criticidad de negocio media por reunión prevista esta semana. Se asigna a aprovisionamiento para validar identidad del cliente externo y alcance de permisos antes de otorgar acceso."
+  },
+  {
+    "idTicket": "TCK-20261001-002",
+    "fechaHora": "2026-10-01T12:45:00.000-05:00",
+    "agente": "aprovisionamiento",
+    "estadoAnterior": "Asignado",
+    "estadoNuevo": "En proceso",
+    "escaladoA": null,
+    "motivoCancelado": null,
+    "resumen": "Se inicia la revisión del acceso solicitado al repositorio del proyecto para un cliente externo. No se especifican el tipo de permisos ni el rol solicitado."
+  },
+  {
+    "idTicket": "TCK-20261001-002",
+    "fechaHora": "2026-10-01T12:46:00.000-05:00",
+    "agente": "aprovisionamiento",
+    "estadoAnterior": "En proceso",
+    "estadoNuevo": "Escalado",
+    "escaladoA": "Revisión humana",
+    "motivoCancelado": null,
+    "resumen": "Se escala para revisión humana porque la solicitud es para un cliente externo. Pendiente confirmar tipo de acceso (lectura/escritura) y rol requerido; no se otorgan permisos."
+  },
+  {
+    "idTicket": "TCK-20261001-003",
+    "fechaHora": "2026-10-01T12:50:00.000-05:00",
+    "agente": "triage",
+    "estadoAnterior": "Nuevo",
+    "estadoNuevo": "En clasificación",
+    "escaladoA": null,
+    "motivoCancelado": null,
+    "resumen": "Se recibe reporte de que no puede ingresar a una aplicación de la empresa. Posible Acceso e identidad; pendiente confirmar nombre de la aplicación, mensaje de error y si afecta a más usuarios para determinar servicio impactado, criticidad y severidad."
+  },
+  {
+    "idTicket": "TCK-20261001-003",
+    "fechaHora": "2026-10-01T12:55:00.000-05:00",
+    "agente": "triage",
+    "estadoAnterior": "En clasificación",
+    "estadoNuevo": "Escalado",
+    "escaladoA": "Juicio humano",
+    "motivoCancelado": null,
+    "resumen": "La dificultad de ingreso afecta también a otras personas, lo que indica un posible incidente compartido. Se escala por ambigüedad entre Acceso e identidad e Infraestructura y software local; falta identificar la aplicación y el error para precisar servicio, severidad y criticidad."
+  }
+]
+
