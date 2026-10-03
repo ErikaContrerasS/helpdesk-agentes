@@ -78,6 +78,25 @@
     "escaladoA": "Juicio humano",
     "motivoCancelado": null,
     "resumen": "La dificultad de ingreso afecta también a otras personas, lo que indica un posible incidente compartido. Se escala por ambigüedad entre Acceso e identidad e Infraestructura y software local; falta identificar la aplicación y el error para precisar servicio, severidad y criticidad."
+  },
+  {
+    "idTicket": "TKT-CLAVE-001",
+    "fechaHora": "2026-10-03T02:53:54.652Z",
+    "agente": "diagnostico-tecnico",
+    "estadoAnterior": "Asignado",
+    "estadoNuevo": "En proceso",
+    "escaladoA": null,
+    "motivoCancelado": null,
+    "resumen": "Diagnóstico técnico inicia el trabajo del ticket."
+  },
+  {
+    "idTicket": "TKT-CLAVE-001",
+    "fechaHora": "2026-10-03T02:53:54.656Z",
+    "agente": "diagnostico-tecnico",
+    "estadoAnterior": "En proceso",
+    "estadoNuevo": "Escalado",
+    "escaladoA": "Infraestructura / NOC",
+    "motivoCancelado": null,
+    "resumen": "El usuario reporta problema con la clave; el servicio de autenticación está caído y no responde."
   }
 ]
-
